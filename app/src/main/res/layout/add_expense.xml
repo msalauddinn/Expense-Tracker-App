@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rLayoutExpense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".addExpense">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/expense"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="820dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textSize="25sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                    android:textSize="25sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp">
+
+                <EditText
+                    android:id="@+id/edtAmount"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/tomato"
+                    android:inputType="numberDecimal"
+                    android:textSize="23sp"
+                    tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/edtCategory"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:backgroundTint="@color/tomato"
+                    android:textSize="23sp"
+                    android:hint="@string/hintExample"
+                    tools:ignore="Autofill"
+                    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edtDesc"
+                android:layout_width="370dp"
+                android:layout_height="150dp"
+                android:hint="@string/hintDes"
+                android:padding="15dp"
+                android:gravity="start"
+                android:background="@drawable/box"
+                android:inputType="text"
+                tools:ignore="AutoFill"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAdd"
+                android:background="@drawable/box"
+                android:backgroundTint="@color/darkYellow"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

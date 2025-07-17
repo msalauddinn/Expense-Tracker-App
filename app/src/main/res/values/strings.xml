@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="desImg">Logo</string>
+    <string name="expense">Expense</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="hintDes">Small Description</string>
+    <string name="hintExample">e.g. Food</string>
+    <string name="btnAdd">Add</string>
+    <string name="desc">Description</string>
+    <string name="total">Total</string>
+    <string name="reset">Reset</string>
+</resources>

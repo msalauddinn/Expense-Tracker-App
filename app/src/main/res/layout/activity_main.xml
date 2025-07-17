@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coral"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintOverlap" />
+
+    <ScrollView
+        android:id="@+id/svContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtAppName"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_rectangular"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/llExpenseContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/add_img"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/svContainer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/box_rounded_sky_blue"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+</RelativeLayout>
