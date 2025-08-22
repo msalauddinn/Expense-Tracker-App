@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         String finalView;
 
         finalView = getString(R.string.amount) + " : " + amount + "\n" +
-                getString(R.string.category) + " : " + category + "\n";
+                getString(R.string.category) + " : " + category;
 
         expenseDetails.setText(finalView);
         expenseDetails.setPadding(20, 20, 20, 20);
